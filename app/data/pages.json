@@ -1,0 +1,5 @@
+[
+  {"title": "Home", "name": "home", "active": true},
+  {"title": "About", "name": "about"},
+  {"title": "Contact", "name": "contact"}
+]

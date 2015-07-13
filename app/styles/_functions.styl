@@ -1,0 +1,51 @@
+// FUNCTIONS
+
+// hash look up function
+// expects list structure like $list = (key1 val1), (key2, val2), (key3, val3)
+// usage: get($list, 'key2') => val2
+get(hash, key)
+  return pair[1] if pair[0] == key for pair in hash
+
+// return as percentage
+// optional 2nd parameter limits the number of decimal places
+// percent( (1/5) ) => 20%
+// percent( (1/3), 3 ) => 33.333%
+percent(num, decimalplaces = false)
+  outcome = num * 100
+  if decimalplaces
+    outcome = todecimalplaces(outcome, decimalplaces)
+  return unit(outcome, '%')
+
+// returns a float with limited number of decimal places
+// todecimalplaces(3.030303, 3) => 3.030
+todecimalplaces(num, numplaces)
+  multiplier = 10 ** numplaces
+  multiplied = floor(num * multiplier)
+  return (multiplied/multiplier)
+
+// shortcut to palette colors to create more hash-like syntax
+// relies on $palette pseudo-hash list in _config and get() function above
+// palette('bodycopy') => #333
+palette(key)
+  return get($palette, key)
+
+
+// MIXINS
+
+// handles sprite positioning
+sprite-position( x-pos = left, y-pos = top, rollover-x = 0, rollover-y = 0 )
+  background-position: x-pos y-pos
+  // if at least one rollover value is set to not 0, add a hover state.
+  unless rollover-x is 0 and rollover-y is 0
+    &:hover
+      background-position: rollover-x rollover-y
+
+// proportional font sizing.
+// optional 2nd parameter specifies to what the font size ought to be relative
+// default output in %, but optional 3rd parameter will pass in specified unit
+// font-resize( 12 ) => font-size: 85.714%;
+// font-resize( 12, 18 ) => font-size: 66.666%;
+// font-resize( 20, 16, 'em' ) => font-size: 1.25em;
+font-resize( targetsize, relativesize = $defaultfontsize, unittype = false )
+  ratio = (targetsize / relativesize)
+  font-size: !unittype ? percent( ratio, 3 ) : unit( todecimalplaces( ratio, 3 ), unittype)

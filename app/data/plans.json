@@ -1,0 +1,67 @@
+[{
+  "carrierName": "ProHealth",
+  "planName": "Be Well Basic",
+  "copay": 40,
+  "premium": 100,
+  "annualLimit": 50000
+}, {
+  "carrierName": "ProHealth",
+  "planName": "Be Well Extra",
+  "copay": 30,
+  "premium": 140,
+  "annualLimit": 100000
+}, {
+  "carrierName": "ProHealth",
+  "planName": "Be Well Max",
+  "copay": 20,
+  "premium": 180,
+  "annualLimit": 200000
+}, {
+  "carrierName": "Assured",
+  "planName": "Assurance One",
+  "copay": 35,
+  "premium": 135,
+  "annualLimit": 120000
+}, {
+  "carrierName": "Assured",
+  "planName": "Assurance Two",
+  "copay": 25,
+  "premium": 200,
+  "annualLimit": 250000
+}, {
+  "carrierName": "McDuck Enterprises",
+  "planName": "Awesomest Plan",
+  "copay": 5,
+  "premium": 10,
+  "annualLimit": 1000000
+}, {
+  "carrierName": "Guy Incognito",
+  "planName": "Some Scam",
+  "copay": 500,
+  "premium": 1400,
+  "annualLimit": 10000
+}, {
+  "carrierName": "Weird outlier",
+  "planName": "Huh?",
+  "copay": 450,
+  "premium": 80,
+  "annualLimit": 250000
+}, {
+  "carrierName": "Bottom of the Barrel",
+  "planName": "No one should ever get this",
+  "copay": 900,
+  "premium": 5000,
+  "annualLimit": 1000
+}, {
+  "carrierName": "Almost at the bottom",
+  "planName": "Not Great",
+  "copay": 900,
+  "premium": 5000,
+  "annualLimit": 250000
+}, {
+  "carrierName": "Wayne Enterprises",
+  "planName": "Metaphorical Armor",
+  "copay": 3,
+  "premium": 100,
+  "annualLimit": 2000000
+}]
