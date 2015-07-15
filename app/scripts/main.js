@@ -5,5 +5,6 @@ require([
 ],
 function ( Backbone, App ) {
   'use strict';
-  App.start();
+  var app = new App();
+  app.start();
 });
