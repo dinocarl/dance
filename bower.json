@@ -2,7 +2,7 @@
   "name": "dance",
   "version": "0.0.0",
   "dependencies": {
-    "bootstrap-stylus": "~2.3.2",
+    "bootstrap-stylus": "~4.0.5",
     "font-awesome-stylus": "~4.3.0",
     "jquery": "~1.9.0",
     "requirejs": "~2.1.19",
