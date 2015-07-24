@@ -10,3 +10,9 @@ Using
 * Bootstrap 3.3.5
 * Font-Awesome 3.2.1
 * Handlebars 2
+
+### Startup
+
+From the command line, go into the root directory and type in
+
+    grunt
